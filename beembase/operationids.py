@@ -38,6 +38,20 @@ ops = [
     "create_proposal",
     "update_proposal_votes",
     "remove_proposal",
+    "author_reward,
+    "curation_reward",
+    "comment_reward",
+    "fill_vesting_withdraw",
+    "shutdown_witness",
+    "fill_transfer_from_savings",
+    "hardfork",
+    'comment_payout_update",
+    "return_vesting_delegation",
+    "comment_benefactor_reward",
+    "producer_reward",
+    "clear_null_account_balance",
+    "proposal_pay",
+    "sps_fund"
 ]
 
 operations = {o: ops.index(o) for o in ops}
