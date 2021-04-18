@@ -45,7 +45,7 @@ ops = [
     "shutdown_witness",
     "fill_transfer_from_savings",
     "hardfork",
-    'comment_payout_update",
+    "comment_payout_update",
     "return_vesting_delegation",
     "comment_benefactor_reward",
     "producer_reward",
