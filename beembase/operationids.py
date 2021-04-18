@@ -38,7 +38,7 @@ ops = [
     "create_proposal",
     "update_proposal_votes",
     "remove_proposal",
-    "author_reward,
+    "author_reward",
     "curation_reward",
     "comment_reward",
     "fill_vesting_withdraw",
