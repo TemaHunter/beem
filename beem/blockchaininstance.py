@@ -780,6 +780,13 @@ class BlockChainInstance(object):
             return False
         return 'STEEM_CHAIN_ID' in config
 
+    @property
+    def is_blurt(self):
+        config = self.get_config(use_stored_data=True)
+        if config is None:
+            return False
+        return 'BLURT_CHAIN_ID' in config
+
     def set_default_account(self, account):
         """ Set the default account to be used
         """
@@ -1436,7 +1443,7 @@ class BlockChainInstance(object):
             posting_accounts_authority.append([addaccount["name"], 1])
 
         props = self.get_chain_properties()
-        if self.hardfork >= 20:
+        if self.hardfork >= 20 or self.is_blurt:
             required_fee_steem = Amount(props["account_creation_fee"], blockchain_instance=self)
         else:
             required_fee_steem = Amount(props["account_creation_fee"], blockchain_instance=self) * 30    
