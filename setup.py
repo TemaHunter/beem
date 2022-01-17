@@ -64,16 +64,16 @@ if __name__ == '__main__':
     write_version_py('beemgraphenebase/version.py')
 
     setup(
-        name='beem',
+        name='beem-blurt',
         version=VERSION,
-        description='Unofficial Python library for HIVE and STEEM',
+        description='Unofficial Python library for BLURT and STEEM',
         long_description=get_long_description(),
-        download_url='https://github.com/holgern/beem/tarball/' + VERSION,
+        download_url='https://github.com/TemaHunter/beem/tree/Blurt-Master',
         author='Holger Nahrstaedt',
         author_email='nahrstaedt@gmail.com',
         maintainer='Holger Nahrstaedt',
         maintainer_email='nahrstaedt@gmail.com',
-        url='http://www.github.com/holgern/beem',
+        url='https://github.com/TemaHunter/beem/tree/Blurt-Master',
         keywords=['hive', 'steem', 'library', 'api', 'rpc'],
         packages=[
             "beem",
